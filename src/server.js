@@ -3,6 +3,10 @@
 
 // mysql://bf6f41ee382d47:b7fab6bc@us-cdbr-east-05.cleardb.net/he
 
+// Host: us-cdbr-east-05.cleardb.net
+// Port: 3306
+// User: bf6f41ee382d47
+
 const express = require("express"); //asking for express
 const cors = require("cors"); //cors is usually for apis most of the time, can get you through permissions
 const mysql = require("mysql"); // pull the mysql package
