@@ -1,13 +1,13 @@
-import "./App.css";
+import "./App.scss";
 import Nav from "./components/Nav.js";
 import Footer from "./components/Footer.js";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
-// import Cart from "./pages/Cart";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+//route paths for each component and page
 function App() {
   return (
     <Router>
@@ -16,7 +16,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/cart" element={<Cart />} /> */}
       </Routes>
       <Footer />
     </Router>

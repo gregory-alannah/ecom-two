@@ -16,9 +16,7 @@ const Nav = () => {
             <a href="/contact">Contact</a>
           </li>
           <li>
-            <a href="/cart ">
-              {/* <img className="cart" src="images/checkout.png" /> */}
-            </a>
+            <a href="/cart "></a>
           </li>
         </ul>
       </nav>

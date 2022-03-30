@@ -2,11 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="form-container">
-      <div className="img-background">
+    <section className="form-container">
+      <section>
         <form action="" className="submit-form">
           <h2 className="contact-request">Want More Information?</h2>
-          <div id="error-message"></div>
+          <section id="error-message"></section>
           <p className="contact-text">
             Please submit the form below for further inquires
           </p>
@@ -28,13 +28,13 @@ const Contact = () => {
           <label>
             Comment:
             <br />
-            <textarea required></textarea>
+            <textarea></textarea>
           </label>
           <br />
           <input class="submit-button" type="submit" name="submit" />
         </form>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 
