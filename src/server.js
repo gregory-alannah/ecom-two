@@ -1,10 +1,9 @@
 //setup for server to connect to sql database products table
 // grabbing the dependinces
 
+// important - for heroku setup and database connection
 // mysql://bf6f41ee382d47:b7fab6bc@us-cdbr-east-05.cleardb.net/he
-
 // Host: us-cdbr-east-05.cleardb.net
-// Port: 3306
 // User: bf6f41ee382d47
 
 const express = require("express"); //asking for express
@@ -15,15 +14,16 @@ const app = express();
 
 //connecting to my sql database eccomerce
 const db = mysql.createConnection({
-  // attempting to make this website live with heroku's credentials it gave to set up a sql database  - following a tutorial
-  host: "us-cdbr-east-05.cleardb.net",
-  user: "bf6f41ee382d47",
-  password: "b7fab6bc",
-  database: "heroku_929a4dfecfd60c3",
-  // host: "localhost",
-  // user: "root",
-  // password: "password",
-  // database: "ecommerce",
+  // attempting to make this website live with heroku's credentials it gave to set up a sql database
+  // host: "us-cdbr-east-05.cleardb.net",
+  // user: "bf6f41ee382d47",
+  // password: "b7fab6bc",
+  // database: "heroku_929a4dfecfd60c3",
+
+  host: "localhost",
+  user: "root",
+  password: "password",
+  database: "ecommerce",
 });
 
 // - this code was causing nodemon to crash
