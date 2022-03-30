@@ -52,6 +52,22 @@ html {
   min-height: 85vh;
 }
 
+.about-section {
+  text-align: center;
+  background: #172f4f;
+  padding: 4rem;
+  color: white;
+}
+
+.about-h1 {
+  font-size: 3rem;
+}
+
+.about-paragraph {
+  font-size: 2.5rem;
+  text-align: justify;
+}
+
 .bottom {
   background-color: silver;
   padding: 1rem;
@@ -76,14 +92,17 @@ html {
 }
 
 /* End of Home page */
-
 /* Product Page */
-
 .product-title,
 .product-text {
   text-align: center;
   margin-top: 1.5rem;
   font-size: 2.2rem;
+}
+
+.loading-message {
+  font-size: 4rem;
+  margin: 1rem;
 }
 
 .grid {
@@ -115,16 +134,74 @@ html {
 
 .product-description {
   padding: 0 2rem 2rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+  line-height: 2.7rem;
 }
 
 .grid > article {
   text-align: center;
 }
 
-/* End of products page */
+.label-prices {
+  position: relative;
+  color: navy;
+  font-size: 2rem;
+}
 
+// input radio buttons
+.filter-input {
+  margin: auto;
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* End of products page */
 /* Contact page */
+
+// .wrapper {
+//   width: 100%;
+//   padding: 0 2rem;
+// }
+
+// .contact-form {
+//   max-width: 55rem;
+//   margin: 0 auto;
+//   background: rgba(0, 0, 0, 0.8);
+//   padding: 3rem;
+//   border-radius: 0.5rem;
+//   display: flex;
+//   box-shadow: 0 0 1rem;
+// }
+
+// .input-fields {
+//   display: flex;
+//   flex-direction: column;
+//   margin-right: 4%;
+// }
+
+// .input-fields,
+// .msg {
+//   width: 48%;
+// }
+
+// .input-fields .input,
+// .msg textarea {
+//   margin: 1rem 0;
+//   background: transparent;
+//   border: 0;
+//   border-bottom: 0.2rem solid #c5ecfd;
+//   padding: 1rem;
+//   color: #c5ecfd;
+//   width: 100%;
+// }
+
+// .msg textarea {
+//   height: 15rem;
+// }
+
+// ::-webkit-input-placeholder {
+// }
 
 .contact-form {
   width: 85%;
@@ -143,7 +220,7 @@ html {
   bottom: 0.1rem;
   max-width: 35rem;
   margin: 1rem auto;
-  border: 0.3rem solid rgb(62, 61, 94);
+  border: 0.3rem solid #3e3d5e;
   padding: 1rem;
 }
 
@@ -179,8 +256,7 @@ textarea {
 }
 
 /* End of contact page */
-
-/* Media Queries for home page */
+/* Media Querie for Nav-bar */
 /*  */
 @media only screen and (max-width: 76.7rem) {
   nav ul {
@@ -188,14 +264,15 @@ textarea {
     flex-direction: column;
     text-align: center;
   }
+
   /* ------------------------------------- */
-} /* Media Queries for product page */
+}
+/* Media Queries for product page */
 @media (max-width: 76.8rem) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 50rem) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
