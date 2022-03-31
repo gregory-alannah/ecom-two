@@ -10,15 +10,15 @@ const app = express();
 //connecting to my sql database eccomerce
 const db = mysql.createConnection({
   // attempting to make this website live with heroku's credentials it gave to set up a sql database
-  host: "us-cdbr-east-05.cleardb.net",
-  user: "bf6f41ee382d47",
-  password: "b7fab6bc",
-  database: "heroku_929a4dfecfd60c3",
+  // host: "us-cdbr-east-05.cleardb.net",
+  // user: "bf6f41ee382d47",
+  // password: "b7fab6bc",
+  // database: "heroku_929a4dfecfd60c3",
 
-  // host: "localhost",
-  // user: "root",
-  // password: "password",
-  // database: "ecommerce",
+  host: "localhost",
+  user: "root",
+  password: "password",
+  database: "ecommerce",
 });
 
 // returning an error if connection was sucessful or not
