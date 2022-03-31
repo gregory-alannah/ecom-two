@@ -21,7 +21,6 @@ const db = mysql.createConnection({
   // database: "ecommerce",
 });
 
-// - this code was causing nodemon to crash
 // returning an error if connection was sucessful or not
 db.connect((err) => {
   if (err) {
